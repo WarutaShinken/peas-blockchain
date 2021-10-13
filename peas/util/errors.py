@@ -151,7 +151,8 @@ class Err(Enum):
 
     INVALID_FEE_TOO_CLOSE_TO_ZERO = 123
     COIN_AMOUNT_NEGATIVE = 124
-
+    INTERNAL_PROTOCOL_ERROR = 125
+    INVALID_SPEND_BUNDLE = 126
 
 class ValidationError(Exception):
     def __init__(self, code: Err, error_msg: str = ""):
